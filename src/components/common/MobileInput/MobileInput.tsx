@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { validationHandler } from './../../../utils/Validations';
+import { validationHandler } from '../../../utils/Validations';
 import './mobileinput.scss';
 
 interface IState {

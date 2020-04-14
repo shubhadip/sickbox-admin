@@ -1,5 +1,5 @@
 import importComponent from './AsyncComponent';
 
-export const Foo = importComponent(() =>
-  import('../components/notFound/NotFound').then((module) => module.default)
+export const Admin = importComponent(() =>
+  import('../components/admin/Admin').then((module) => module.default)
 );
