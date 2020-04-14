@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { signinUser, signoutUser } from './auth_actions';
+import { fetchOrders } from './order_actions';
 
 declare let __isBrowser__: boolean;
 
@@ -34,3 +35,4 @@ axios.interceptors.response.use(
 );
 
 export { signinUser };
+export { fetchOrders }
