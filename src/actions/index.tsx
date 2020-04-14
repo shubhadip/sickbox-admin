@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { signinUser, signoutUser} from './auth_actions';
+import { signinUser, signoutUser } from './auth_actions';
 
 declare let __isBrowser__: boolean;
 

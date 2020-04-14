@@ -8,7 +8,7 @@ export default function (getComponent: any) {
 
     componentDidMount() {
       if (!this.state.Component) {
-        debugger
+        debugger;
         getComponent().then((Component: any) => {
           AsyncComponent.Component = Component;
           this.setState({ Component });
