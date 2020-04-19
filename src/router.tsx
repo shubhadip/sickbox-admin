@@ -8,7 +8,6 @@ import Signup from './components/signUp/SignUp';
 import NotFound from './components/notFound/NotFound';
 import Product from './components/product/Product';
 import Order from './components/order/Order';
-// import Admin from './components/admin/Admin';
 import Header from './components/header/Header';
 import AuthComponent from './HOC/AuthComponent';
 import { Admin } from './HOC/ImportComponents';

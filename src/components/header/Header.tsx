@@ -4,14 +4,13 @@ import { connect } from 'react-redux';
 import './header.scss';
 
 class Header extends React.Component<any, any> {
+  
+  handleClick = () => {
+  }
+
   renderLinks() {
     if (this.props.authenticated) {
       return [
-        <li className="nav-item right" key={'signout'}>
-          <Link className="nav-link" to={'signout'}>
-            Sign Out
-          </Link>
-        </li>,
         <li key={'about'}>
           <Link className="nav-link" to={'about'}>
             About
@@ -32,6 +31,9 @@ class Header extends React.Component<any, any> {
             Foo
           </Link>
         </li>,
+        <div className="nav-link" onClick={this.handleClick} key={'signout'}>
+          SignOut
+        </div>
       ];
     } else {
       return [
