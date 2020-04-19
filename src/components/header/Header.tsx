@@ -4,9 +4,7 @@ import { connect } from 'react-redux';
 import './header.scss';
 
 class Header extends React.Component<any, any> {
-  
-  handleClick = () => {
-  }
+  handleClick = () => {};
 
   renderLinks() {
     if (this.props.authenticated) {
@@ -33,7 +31,7 @@ class Header extends React.Component<any, any> {
         </li>,
         <div className="nav-link" onClick={this.handleClick} key={'signout'}>
           SignOut
-        </div>
+        </div>,
       ];
     } else {
       return [
